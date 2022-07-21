@@ -21,13 +21,13 @@ root {
 }
 
 
- 
+
 .pricing_title{
   margin-top: 20px;
   text-align: center;
   font-size: 32px;
   color: hsl(232, 13%, 49%);
- 
+
 }
 
 body{
@@ -37,7 +37,7 @@ body{
  background-color: hsl(240, 78%, 98%);
  display: flex;
  flex-direction: column;
- background-image:url(https:digitshack.com/codepen/mentor9/bg-top.svg), 
+ background-image:url(https:digitshack.com/codepen/mentor9/bg-top.svg),
  url(https://digitshack.com/codepen/mentor9/bg-bottom.svg);
  background-position: right top;
  background-repeat: no-repeat;
@@ -55,8 +55,8 @@ body{
    color: hsl(234, 14%, 74%);
 
 }
-   
-      
+
+
 .toogle-label{
 font-size: 0.9rem;
 color: hsl(234, 14%, 74%);
@@ -137,7 +137,7 @@ h1, h2, h3{
   width: 80%;
   border-bottom: 1px solid rgba(179, 180, 198, 1);
   border-top: 1px solid rgba(179, 180, 198, 1);
-  
+
 
 }
 
@@ -155,7 +155,7 @@ cursor: pointer;
 outline: none;
 height: 40px;
 border: none;
-}  
+}
 
 
 .price-btn1{
