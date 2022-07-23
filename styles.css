@@ -15,6 +15,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
+  background: url(./images/bg-top.svg) var(--Very-Light-Grayish-Blue);
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
 /* Container */
@@ -29,6 +33,7 @@ body {
 }
 
 .pricing_title {
+  color: var(--Dark-Grayish-Blue);
   margin-bottom: 2rem;
 }
 
@@ -38,7 +43,9 @@ body {
   justify-content: center;
 }
 
-.toggle-label {}
+.toggle-label {
+  color: var(--Grayish-Blue);
+}
 
 .toggle-wrapper {}
 
@@ -50,6 +57,7 @@ body {
 .pricing-body {}
 
 .pricing_card {
+  color: var(--Dark-Grayish-Blue);
   padding: 2rem;
 }
 
