@@ -6,7 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="styles.css" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | Pricing Component</title>
 </head>
 <body>
@@ -15,18 +17,20 @@
     <header class="pricing-header">
       <h1 class="pricing_title">Our Pricing</h1>
 
-      <!-- Pricing Toogle -->
-      <div class="pricing_toogle">
-        <span class="toogle-label">Annually</span>
+      <!-- Pricing Toggle -->
+      <div class="pricing_toggle">
+        <span class="toggle-label">Annually</span>
         <aside class="toggle-wrapper">
           <label class="toggle-switch" for="checkbox">
             <input type="checkbox" id="checkbox">
             <div class="slider-round"></div>
           </label>
         </aside>
-        <span class="toogle-label">Monthly</span>
+        <span class="toggle-label">Monthly</span>
       </div>
     </header>
+
+    <!-- Price Body -->
     <section class="pricing-body">
       <aside class="pricing_card">
         <h3 class="card-title">Basic</h3>
@@ -36,13 +40,13 @@
         <p class="price-feature">Send up to 3 GB</p>
         <button class="price-btn">Learn More</button>
       </aside>
-      <aside class="pricing_card1">
+      <aside class="pricing_card">
         <h3 class="card-title">Professional</h3>
         <h2 class="card-price">&dollar;24.99</h2>
         <p class="price-feature">1 TB Storage</p>
         <p class="price-feature">5 Users Allowed</p>
         <p class="price-feature">Send up to 10 GB</p>
-        <button class="price-btn1">Learn More</button>
+        <button class="price-btn">Learn More</button>
       </aside>
       <aside class="pricing_card">
         <h3 class="card-title">Master</h3>

@@ -1,17 +1,9 @@
-
-root {
-
-
-
-
- --Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
-
-
-
---Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
---Light-Grayish-Blue: hsl(234, 14%, 74%);
---Grayish-Blue: hsl(233, 13%, 49%);
---Dark-Grayish-Blue: hsl(232, 13%, 33%);
+:root {
+  --Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
 }
 
 * {
@@ -20,179 +12,81 @@ root {
   padding: 0;
 }
 
-
- 
-.pricing_title{
-  margin-top: 20px;
-  text-align: center;
-  font-size: 32px;
-  color: hsl(232, 13%, 49%);
- 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  background: url(./images/bg-top.svg) var(--Very-Light-Grayish-Blue);
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
-body{
-  Font-size: 15px;
-  font-family:url(https://fonts.google.com/specimen/Montserrat);
- font-Weight: 700;
- background-color: hsl(240, 78%, 98%);
- display: flex;
- flex-direction: column;
- background-image:url(https:digitshack.com/codepen/mentor9/bg-top.svg), 
- url(https://digitshack.com/codepen/mentor9/bg-bottom.svg);
- background-position: right top;
- background-repeat: no-repeat;
- height: 100vh;
-
-
-}
-
-
-.pricing_toogle{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   margin-top: 30px;
-   color: hsl(234, 14%, 74%);
-
-}
-   
-      
-.toogle-label{
-font-size: 0.9rem;
-color: hsl(234, 14%, 74%);
-}
-
-
-.toggle-switch{
-  width: 60px;
-  height: 35px;
-  cursor: pointer;
-  position: relative;
-}
-
-.slider-round{
-  position: absolute;
-  border-radius: 40px;
-  cursor: pointer;
-  transition: 0.5s;
-  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-
-
-}
-.card-title{
-  font-size: 20px;
-  margin-bottom: 30px;
-  color: hsl(233, 13%, 49%);
-}
-
-
-.card-price{
-  font-size: 65px;
-  color: hsl(232, 13%, 33%);
-}
-
-
-.toogle-label{
+/* Container */
+.container {
+  padding: 4rem 1rem;
   text-align: center;
 }
 
+/* Price Header */
+.pricing-header {
+  margin-bottom: 2rem;
+}
 
-.pricing-body{
-  text-align: center;
-  border-top-right-radius:10px;
-  margin: 2rem auto;
-  width: 25%;
+.pricing_title {
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 2rem;
+}
+
+/* Price Toggle */
+.pricing_toggle {
+  display: flex;
   justify-content: center;
 }
 
-
-.pricing_card{
-  background-color:white;
-  padding: 30px;
-  margin: 20px 0;
-  width: 100%;
-  height: auto;
-    border-radius: 10px;
+.toggle-label {
+  color: var(--Grayish-Blue);
 }
 
+.toggle-wrapper {}
 
-.pricing_card1{
-  background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-  padding: 50px 50px;
-  margin: 20px 0
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.toggle-switch {}
 
 
-}
-h1, h2, h3{
-  font-size:50px ;
-  color: hsl(232, 13%, 33%);
+
+/* Price Body */
+.pricing-body {}
+
+.pricing_card {
+  color: var(--Dark-Grayish-Blue);
+  padding: 2rem;
 }
 
-
-.price-feature{
-  padding: 1em 0;
-  width: 80%;
-  border-bottom: 1px solid rgba(179, 180, 198, 1);
-  border-top: 1px solid rgba(179, 180, 198, 1);
-  
-
+.card-title {
+  margin-bottom: 2rem;
 }
 
-
-.price-btn{
-width: 85%;
-border-radius: 5px;
-background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-font-size:0.80rem;
-color: white;
-font-weight: 70;
-margin: 1.5rem auto 0.5rem auto;
-text-transform: uppercase;
-cursor: pointer;
-outline: none;
-height: 40px;
-border: none;
-}  
-
-
-.price-btn1{
- width: 85%;
-border-radius: 5px;
-background: white;
-font-size:0.80rem;
-font-weight: 70;
-margin: 1.5rem auto 0.5rem auto;
-text-transform: uppercase;
-cursor: pointer;
-outline: none;
-height: 40px;
-color: var(linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%)));
-border: none;
+.card-title,
+.price-feature {
+  font-size: 1.1rem;
 }
 
-.price-btn:houver{
-  border-color: hsl(234, 14%, 74%);
-  background: #fff;
-  color: hsl(237, 63%, 64%);
-
-}
-.pricing-card1 .card-title,
-.pricing-card1 .card-price{
-  color: white;
+.card-price {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
 }
 
-/* Estilização desktop*/
-
-@media (min-width: 1440px )
-{
-
-.pricing-body{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
-  align-items: center;
-  justify-content: center;
-
+.price-feature {
+  border-bottom: 1px solid var(--Grayish-Blue);
+  padding: 1rem 0;
 }
+
+/* Set border top */
+.price-feature:nth-child(3) {
+  border-top: 1px solid var(--Grayish-Blue);
+}
+
+.price-feature:nth-child(5) {
+  margin-bottom: 2rem;
+}
+
+.price-btn {}
