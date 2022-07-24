@@ -1,9 +1,11 @@
 :root {
-  --Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+  --card-gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --btn-gradient: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
   --Light-Grayish-Blue: hsl(234, 14%, 74%);
   --Grayish-Blue: hsl(233, 13%, 49%);
   --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+  --white: hsl(0,0%,100%);
 }
 
 * {
@@ -19,6 +21,10 @@ body {
   background-size: contain;
   background-position: top right;
   background-repeat: no-repeat;
+}
+
+button {
+ font-weight: 700;
 }
 
 /* Container */
@@ -51,14 +57,28 @@ body {
 
 .toggle-switch {}
 
-
-
 /* Price Body */
 .pricing-body {}
 
 .pricing_card {
   color: var(--Dark-Grayish-Blue);
+  margin: 2rem 0;
   padding: 2rem;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.pricing_card:nth-child(2) {
+  background:blue;
+  margin: 2rem 0;
+  padding: 2rem;
+  color: white;  
+  background: var(--card-gradient); 
+}
+
+.pricing_card:nth-child(2) .price-btn:nth-child(6){
+  background: var(--white);
+  color:var(--Grayish-Blue);
 }
 
 .card-title {
@@ -89,4 +109,12 @@ body {
   margin-bottom: 2rem;
 }
 
-.price-btn {}
+.price-btn {
+  width: 100%;
+  height: 2.2rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--Very-Light-Grayish-Blue); 
+  cursor: pointer; 
+  background: var(--btn-gradient); 
+}
