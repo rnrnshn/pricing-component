@@ -5,7 +5,7 @@
   --Light-Grayish-Blue: hsl(234, 14%, 74%);
   --Grayish-Blue: hsl(233, 13%, 49%);
   --Dark-Grayish-Blue: hsl(232, 13%, 33%);
-  --white: hsl(0,0%,100%);
+  --white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -26,7 +26,7 @@ body {
 button {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  text-transform:uppercase;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -73,11 +73,10 @@ button {
 }
 
 .pricing_card:nth-child(2) {
-  background:blue;
   margin: 2rem 0;
   padding: 2rem;
-  color: white;  
-  background: var(--card-gradient); 
+  color: var(--white);
+  background: var(--card-gradient);
   box-shadow: 0px 0px 20px -10px;
 }
 
@@ -89,9 +88,9 @@ button {
   border-top: 1px solid var(--Very-Light-Grayish-Blue);
 }
 
-.pricing_card:nth-child(2) .price-btn:nth-child(6){
+.pricing_card:nth-child(2) .price-btn:nth-child(6) {
   background: var(--white);
-  color:var(--Grayish-Blue);
+  color: var(--Grayish-Blue);
 }
 
 
@@ -128,10 +127,50 @@ button {
   height: 2.5rem;
   border-radius: 5px;
   border: none;
-  color: var(--Very-Light-Grayish-Blue); 
-  cursor: pointer; 
-  background: var(--btn-gradient); 
+  color: var(--Very-Light-Grayish-Blue);
+  cursor: pointer;
+  background: var(--btn-gradient);
 }
 
+/* Device Breakpoints */
+@media screen and (min-width: 720px) {
+  .pricing-body {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1.5rem 1fr 1.5rem;
+  }
 
- 
+  .pricing_card:nth-child(1) {
+    grid-row: 2/3;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+  }
+
+  .pricing_card:nth-child(2) {
+    grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pricing_card:nth-child(3) {
+    grid-row: 2/3;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+  }
+
+  /* Increase font-size */
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .price-feature {
+    font-size: .9rem;
+  }
+
+  .card-price {
+    font-size: 4rem;
+  }
+}
