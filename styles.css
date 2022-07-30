@@ -133,18 +133,5 @@ button {
   background: var(--btn-gradient); 
 }
 
-/*Media queries*/
 
-@media (min-width: 720px){
-  
-    .pricing_card {
-        flex-direction: column;
-        
-    }
-    .pricing_card {
-        margin: 1rem;
-        border-radius: 10px;
-        width: 80%
-    }
-    
-}
+ 
