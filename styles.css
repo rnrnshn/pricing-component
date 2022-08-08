@@ -50,6 +50,7 @@ button {
 .pricing_toggle {
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 
 .toggle-label {
@@ -58,7 +59,63 @@ button {
 
 .toggle-wrapper {}
 
-.toggle-switch {}
+
+/* make the input and slider stay side by side */
+.toggle-switch {
+  display: inline-block;
+  width: 45px;
+  height: 24px;
+  position: relative;
+}
+
+/* Hide the input */
+.toggle-switch input {
+  display: none;
+}
+
+/* give the slider a look */
+.slider {
+  background: var(--btn-gradient);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* create the button slider */
+.slider::before {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  transition: 0.4s;
+  background-color: var(--white);
+}
+
+/* when the input is checked change the slider bg*/
+input:checked+.slider {
+  background: var(--btn-gradient);
+}
+
+/* when the input is checked move the slider */
+input:checked+.slider::before {
+  transform: translateX(20px);
+}
+
+/* add a border-radius on slider  */
+.round {
+  border-radius: 34px;
+}
+
+/* add a border-radius on the slider toggle inside */
+.round::before {
+  border-radius: 34px;
+}
 
 /* Price Body */
 .pricing-body {}
